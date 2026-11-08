@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══════════════════════════════════════
+     PRIMARY META TAGS
+════════════════════════════════════════ -->
+<title>Adam Elgeneral</title>
+<meta name="title" content="Adam Elgeneral">
+<meta name="description" content="Adam Elgeneral — Ethical Hacker, Web Developer & Cyber Security from Alexandria, Egypt. Building modern websites, exploring technology, and protecting digital systems. Speaks 6 languages.">
+<meta name="keywords" content="Adam Elgeneral, آدم الجنرال, Ethical Hacker, Web Developer, Cyber Security, Frontend, React, Python, OSINT, Alexandria Egypt, Portfolio, هاكر أخلاقي">
+<meta name="author" content="Adam Elgeneral">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Arabic, English">
+<meta name="theme-color" content="#00d4ff">
+
+<!-- ═══════════════════════════════════════
+     OPEN GRAPH / FACEBOOK / WHATSAPP
+════════════════════════════════════════ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adam-elgeneral.vercel.app/">
+<meta property="og:title" content="Adam Elgeneral">
+<meta property="og:description" content="Ethical Hacker, Web Developer & Cyber Security from Alexandria. Building modern websites and protecting digital systems.">
+<meta property="og:image" content="https://via.placeholder.com/1200x630/0a0a0a/00d4ff?text=Adam+Elgeneral">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:site_name" content="Adam Elgeneral Portfolio">
+
+<!-- ═══════════════════════════════════════
+     TWITTER / X CARD
+════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://adam-elgeneral.vercel.app/">
+<meta name="twitter:title" content="Adam Elgeneral | Ethical Hacker & Web Developer">
+<meta name="twitter:description" content="Ethical Hacker, Web Developer & Cyber Security from Alexandria, Egypt. Building modern websites and protecting digital systems.">
+<meta name="twitter:image" content="https://via.placeholder.com/1200x630/0a0a0a/00d4ff?text=Adam+Elgeneral">
+
+<!-- ═══════════════════════════════════════
+     FAVICON — ALL SIZES
+════════════════════════════════════════ -->
+<link rel="icon" type="image/jpeg" href="https://via.placeholder.com/1200x630/0a0a0a/00d4ff?text=Adam+Elgeneral">
+<link rel="apple-touch-icon" href="https://via.placeholder.com/1200x630/0a0a0a/00d4ff?text=Adam+Elgeneral">
+<link rel="shortcut icon" href="https://via.placeholder.com/1200x630/0a0a0a/00d4ff?text=Adam+Elgeneral">
+
+<!-- ═══════════════════════════════════════
+     FONTS & ICONS
+════════════════════════════════════════ -->
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Noto+Kufi+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+/* ══════════════════════════════════════
+   RESET & VARIABLES
+══════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --transition-speed: 0.4s;
+}
+
+[data-theme="dark"] {
+  --bg: #020408;
+  --bg2: #060e1c;
+  --card: rgba(4,16,36,0.82);
+  --nav-bg: rgba(2,4,8,0.92);
+  --neon: #00d4ff;
+  --neon2: #0077cc;
+  --text: #dff0ff;
+  --text2: #7ab8d4;
+  --dim: #3a6a88;
+  --border: rgba(0,212,255,0.22);
+  --border-h: rgba(0,212,255,0.5);
+  --glow: rgba(0,212,255,0.12);
+  --scroll-bg: #020408;
+  --modal-bg: rgba(0,0,0,0.92);
+  --star: #f5c542;
+}
+[data-theme="light"] {
+  --bg: #eef4fb;
+  --bg2: #ddeaf8;
+  --card: rgba(255,255,255,0.88);
+  --nav-bg: rgba(238,244,251,0.95);
+  --neon: #0066bb;
+  --neon2: #004499;
+  --text: #0a1828;
+  --text2: #2a5580;
+  --dim: #6699bb;
+  --border: rgba(0,100,200,0.2);
+  --border-h: rgba(0,100,200,0.5);
+  --glow: rgba(0,100,200,0.07);
+  --scroll-bg: #eef4fb;
+  --modal-bg: rgba(0,0,30,0.88);
+  --star: #e6a800;
+}
+
+/* ══════════════════════════════════════
+   BODY & BASE
+══════════════════════════════════════ */
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  cursor: none;
+  transition: background var(--transition-speed), color var(--transition-speed);
+}
+[data-lang="ar"] body { font-family: 'Noto Kufi Arabic', 'Rajdhani', sans-serif; }
+[data-lang="ar"] { direction: rtl; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--scroll-bg); }
+::-webkit-scrollbar-thumb { background: var(--neon); border-radius: 2px; }
+
+/* ══════════════════════════════════════
+   CURSOR
+══════════════════════════════════════ */
+.cursor { position: fixed; width: 9px; height: 9px; background: var(--neon); border-radius: 50%; pointer-events: none; z-index: 10000; transform: translate(-50%,-50%); transition: transform 0.08s; }
+.cursor-ring { position: fixed; width: 34px; height: 34px; border: 1px solid var(--neon); border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); transition: all 0.14s; opacity: 0.55; }
+.cursor.click { transform: translate(-50%,-50%) scale(0.6); }
+.cursor-ring.hov { transform: translate(-50%,-50%) scale(1.7); opacity: 0.9; }
+
+/* ══════════════════════════════════════
+   PARTICLES CANVAS
+══════════════════════════════════════ */
+#particles { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+
+/* ══════════════════════════════════════
+   LOADER
+══════════════════════════════════════ */
+#loader {
+  position: fixed; inset: 0; background: #000;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  z-index: 9500; transition: opacity 0.8s;
+}
+#loader-text { font-family: 'Share Tech Mono', monospace; color: var(--neon); font-size: 13px; line-height: 2; white-space: pre; width: min(360px,90vw); }
+.loader-bar-wrap { width: min(360px,90vw); height: 2px; background: rgba(0,150,200,0.15); margin-top: 18px; }
+.loader-bar { height: 100%; width: 0; background: linear-gradient(90deg, #0044aa, #00d4ff); animation: lbar 2.6s ease forwards; }
+@keyframes lbar { to { width: 100%; } }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:0} }
+.blink { animation: blink 0.8s infinite; }
+
+/* ══════════════════════════════════════
+   NAV
+══════════════════════════════════════ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 11px 44px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition-speed), border-color var(--transition-speed);
+}
+.nav-logo { font-family: 'Orbitron', monospace; font-size: 17px; font-weight: 900; color: var(--neon); letter-spacing: 3px; text-decoration: none; cursor: none; }
+.nav-logo span { color: var(--dim); }
+.nav-links { display: flex; gap: 26px; list-style: none; align-items: center; }
+.nav-links a { font-family: 'Share Tech Mono', monospace; font-size: 12px; color: var(--text2); text-decoration: none; letter-spacing: 2px; text-transform: uppercase; transition: color 0.3s; position: relative; cursor: none; }
+.nav-links a::after { content:''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--neon); transition: width 0.3s; }
+.nav-links a:hover { color: var(--neon); }
+.nav-links a:hover::after { width: 100%; }
+[data-lang="ar"] .nav-links { flex-direction: row-reverse; }
+[data-lang="ar"] .nav-links a::after { left: auto; right: 0; }
+
+.nav-controls { display: flex; gap: 8px; align-items: center; }
+.ctrl-btn {
+  background: var(--card); border: 1px solid var(--border); color: var(--text2);
+  font-family: 'Share Tech Mono', monospace; font-size: 11px; letter-spacing: 1px;
+  padding: 6px 13px; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; gap: 6px;
+  backdrop-filter: blur(8px);
+}
+.ctrl-btn:hover, .ctrl-btn.on { border-color: var(--neon); color: var(--neon); background: rgba(0,150,200,0.1); }
+
+/* ══════════════════════════════════════
+   HERO
+══════════════════════════════════════ */
+#hero {
+  position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  padding: 96px 44px 60px; overflow: hidden;
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px; opacity: 0.5;
+}
+.hero-inner { position: relative; z-index: 2; display: flex; gap: 72px; align-items: center; max-width: 1100px; width: 100%; margin: 0 auto; }
+
+/* Profile image — COMPLETELY STATIC, no rotation */
+.img-wrap { position: relative; flex-shrink: 0; width: 240px; height: 240px; }
+.img-border {
+  position: absolute; inset: -3px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--neon), var(--neon2), var(--neon));
+  /* NO animation on this element */
+}
+.img-inner { position: absolute; inset: 3px; border-radius: 50%; overflow: hidden; background: var(--bg); }
+.img-inner img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+/* Scanline effect only — does not move the image */
+.img-scan {
+  position: absolute; inset: 3px; border-radius: 50%; pointer-events: none;
+  background: repeating-linear-gradient(0deg, transparent, transparent 4px, rgba(0,212,255,0.035) 4px, rgba(0,212,255,0.035) 5px);
+  animation: scanSlide 6s linear infinite;
+}
+@keyframes scanSlide { 0%{ background-position: 0 0; } 100%{ background-position: 0 300px; } }
+.ring { position: absolute; border-radius: 50%; border: 1px solid var(--border); animation: ringPulse 3.5s ease-in-out infinite; }
+.ring:nth-child(1) { inset: -14px; }
+.ring:nth-child(2) { inset: -28px; animation-delay: 0.9s; opacity: 0.55; }
+.ring:nth-child(3) { inset: -46px; animation-delay: 1.8s; opacity: 0.28; }
+@keyframes ringPulse { 0%,100%{ box-shadow: 0 0 5px rgba(0,212,255,0.2); } 50%{ box-shadow: 0 0 18px rgba(0,212,255,0.5); } }
+
+.hero-text { flex: 1; }
+.hero-tag { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--neon); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+.hero-tag::before { content:''; width: 28px; height: 1px; background: var(--neon); }
+[data-lang="ar"] .hero-tag { flex-direction: row-reverse; }
+[data-lang="ar"] .hero-tag::before { display: none; }
+[data-lang="ar"] .hero-tag::after { content:''; width: 28px; height: 1px; background: var(--neon); }
+.hero-name { font-family: 'Orbitron', monospace; font-size: clamp(30px,5vw,52px); font-weight: 900; line-height: 1.1; margin-bottom: 8px; }
+.hero-name .f { color: var(--text); }
+.verified-badge { display: inline-flex; align-items: center; vertical-align: middle; margin-left: 8px; }
+.verified-badge svg { width: clamp(22px, 3vw, 32px); height: clamp(22px, 3vw, 32px); filter: drop-shadow(0 0 8px rgba(29,155,240,0.7)); animation: badgePulse 2.5s ease-in-out infinite; }
+@keyframes badgePulse { 0%,100%{ filter: drop-shadow(0 0 6px rgba(29,155,240,0.6)); } 50%{ filter: drop-shadow(0 0 16px rgba(29,155,240,1)); } }
+.hero-name .l { color: var(--neon); text-shadow: 0 0 28px rgba(0,212,255,0.4); }
+[data-theme="light"] .hero-name .l { text-shadow: none; }
+.hero-sub { font-family: 'Share Tech Mono', monospace; font-size: 12px; color: var(--text2); letter-spacing: 3px; margin-bottom: 22px; }
+.typing-box { font-family: 'Share Tech Mono', monospace; font-size: 15px; color: var(--neon); margin-bottom: 30px; min-height: 24px; }
+.typing-box::before { content: '> '; color: var(--dim); }
+.typing-cur { animation: blink 0.8s infinite; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+[data-lang="ar"] .hero-text { text-align: right; }
+[data-lang="ar"] .hero-btns { justify-content: flex-end; }
+
+.btn-p {
+  padding: 12px 28px; background: transparent; border: 1px solid var(--neon);
+  color: var(--neon); font-family: 'Orbitron', monospace; font-size: 11px; font-weight: 700;
+  letter-spacing: 2px; text-decoration: none; cursor: none; position: relative; overflow: hidden;
+  transition: all 0.3s; text-transform: uppercase;
+}
+.btn-p::before { content:''; position: absolute; inset: 0; background: var(--neon); transform: translateX(-100%); transition: transform 0.3s; z-index: 0; }
+.btn-p:hover::before { transform: translateX(0); }
+.btn-p:hover { color: #fff; box-shadow: 0 0 22px rgba(0,212,255,0.3); }
+.btn-p span { position: relative; z-index: 1; }
+.btn-g { padding: 12px 28px; background: transparent; border: 1px solid var(--dim); color: var(--text2); font-family: 'Orbitron', monospace; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-decoration: none; cursor: none; transition: all 0.3s; text-transform: uppercase; }
+.btn-g:hover { border-color: var(--neon); color: var(--neon); }
+
+/* ══════════════════════════════════════
+   SECTIONS
+══════════════════════════════════════ */
+.sec { padding: 86px 44px; position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; }
+.sec-head { margin-bottom: 48px; }
+.sec-label { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--neon); letter-spacing: 5px; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
+.sec-label::before { content:''; flex: 0 0 22px; height: 1px; background: var(--neon); }
+[data-lang="ar"] .sec-label { flex-direction: row-reverse; }
+[data-lang="ar"] .sec-label::before { display: none; }
+[data-lang="ar"] .sec-label::after { content:''; flex: 0 0 22px; height: 1px; background: var(--neon); }
+.sec-title { font-family: 'Orbitron', monospace; font-size: clamp(22px,4vw,36px); font-weight: 900; color: var(--text); }
+.sec-title span { color: var(--neon); }
+.sec-line { width: 55px; height: 2px; background: linear-gradient(90deg, var(--neon), transparent); margin-top: 11px; }
+[data-lang="ar"] .sec-line { background: linear-gradient(270deg, var(--neon), transparent); }
+
+/* Card base */
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  backdrop-filter: blur(12px); transition: all 0.32s;
+}
+.card:hover { border-color: var(--border-h); box-shadow: 0 0 32px var(--glow); }
+
+/* ══════════════════════════════════════
+   ABOUT
+══════════════════════════════════════ */
+.about-grid { display: grid; grid-template-columns: 1.4fr 0.6fr; gap: 56px; align-items: start; }
+.about-text { font-size: 15px; line-height: 1.95; color: var(--text2); }
+[data-lang="ar"] .about-text { direction: rtl; text-align: right; }
+.about-text p { margin-bottom: 13px; }
+.quote-box {
+  padding: 20px 24px; border-left: 3px solid var(--neon); background: var(--card);
+  border: 1px solid var(--border); border-left: 3px solid var(--neon);
+  font-family: 'Share Tech Mono', monospace; font-size: 13px; color: var(--neon);
+  line-height: 1.8; margin-top: 20px; backdrop-filter: blur(8px);
+}
+[data-lang="ar"] .quote-box { direction: rtl; text-align: right; border-left: none; border-right: 3px solid var(--neon); font-family: 'Noto Kufi Arabic', monospace; }
+[data-lang="en"] .quote-box { font-family: 'Rajdhani', sans-serif; font-size: 15px; color: var(--text2); font-style: italic; }
+.stats { display: flex; flex-direction: column; gap: 14px; }
+.stat-card { padding: 18px 22px; }
+.stat-num { font-family: 'Orbitron', monospace; font-size: 32px; font-weight: 900; color: var(--neon); }
+[data-theme="dark"] .stat-num { text-shadow: 0 0 14px rgba(0,212,255,0.4); }
+.stat-lbl { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--dim); letter-spacing: 2px; text-transform: uppercase; margin-top: 3px; }
+
+/* ══════════════════════════════════════
+   SKILLS
+══════════════════════════════════════ */
+.skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.skill-card { padding: 24px; }
+.skill-card:hover { transform: translateY(-4px); }
+.sk-title { font-family: 'Orbitron', monospace; font-size: 12px; font-weight: 700; color: var(--neon); letter-spacing: 2px; margin-bottom: 18px; }
+.sk-title::before { content:'[ '; color: var(--dim); }
+.sk-title::after { content:' ]'; color: var(--dim); }
+.sk-item { margin-bottom: 12px; }
+.sk-item:last-child { margin-bottom: 0; }
+.sk-name { font-family: 'Share Tech Mono', monospace; font-size: 12px; color: var(--text2); display: flex; justify-content: space-between; margin-bottom: 5px; }
+.sk-name span { color: var(--neon); }
+.sk-bar { height: 3px; background: rgba(0,150,200,0.12); border-radius: 2px; overflow: hidden; }
+.sk-fill { height: 100%; background: linear-gradient(90deg, var(--neon2), var(--neon)); width: 0; transition: width 1.3s ease; }
+[data-theme="dark"] .sk-fill { box-shadow: 0 0 6px rgba(0,212,255,0.35); }
+
+/* ══════════════════════════════════════
+   FEATURED VIDEO
+══════════════════════════════════════ */
+.vid-wrap {
+  position: relative; max-width: 860px; margin: 0 auto;
+  cursor: none;
+}
+.vid-thumb {
+  position: relative; border-radius: 4px; overflow: hidden;
+  border: 1px solid var(--border); transition: all 0.35s;
+  box-shadow: 0 0 0px var(--glow);
+}
+.vid-thumb:hover { border-color: var(--border-h); box-shadow: 0 0 40px var(--glow), 0 0 80px rgba(0,212,255,0.06); }
+.vid-thumb img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; transition: transform 0.4s; }
+.vid-thumb:hover img { transform: scale(1.02); }
+/* Cyber scanlines */
+.vid-scan {
+  position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,212,255,0.025) 3px, rgba(0,212,255,0.025) 4px);
+}
+/* Animated border glow */
+.vid-border-top { position: absolute; top: 0; left: 0; height: 2px; width: 0; background: linear-gradient(90deg, transparent, var(--neon), transparent); animation: vidLine 3s ease-in-out infinite; }
+.vid-border-bot { position: absolute; bottom: 0; right: 0; height: 2px; width: 0; background: linear-gradient(270deg, transparent, var(--neon), transparent); animation: vidLine 3s ease-in-out infinite 1.5s; }
+@keyframes vidLine { 0%{width:0; opacity:0} 50%{width:100%; opacity:1} 100%{width:0; opacity:0} }
+/* Play button */
+.vid-play {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  width: 72px; height: 72px; border-radius: 50%;
+  background: rgba(0,20,40,0.75); border: 2px solid var(--neon);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--neon); font-size: 24px; transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(0,212,255,0.3);
+}
+.vid-thumb:hover .vid-play { background: var(--neon); color: #fff; box-shadow: 0 0 40px rgba(0,212,255,0.6); transform: translate(-50%,-50%) scale(1.1); }
+/* HUD corners */
+.hud-tl, .hud-tr, .hud-bl, .hud-br { position: absolute; width: 18px; height: 18px; }
+.hud-tl { top: -1px; left: -1px; border-top: 2px solid var(--neon); border-left: 2px solid var(--neon); }
+.hud-tr { top: -1px; right: -1px; border-top: 2px solid var(--neon); border-right: 2px solid var(--neon); }
+.hud-bl { bottom: -1px; left: -1px; border-bottom: 2px solid var(--neon); border-left: 2px solid var(--neon); }
+.hud-br { bottom: -1px; right: -1px; border-bottom: 2px solid var(--neon); border-right: 2px solid var(--neon); }
+/* Info row */
+.vid-title-row { margin-top: 14px; margin-bottom: 4px; }
+.vid-main-title { font-family: 'Noto Kufi Arabic', 'Rajdhani', sans-serif; font-size: 18px; font-weight: 700; color: var(--text); direction: rtl; text-align: right; line-height: 1.5; }
+[data-lang="en"] .vid-main-title { font-family: 'Rajdhani', sans-serif; font-size: 18px; direction: rtl; text-align: right; }
+.vid-info { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; flex-wrap: wrap; gap: 10px; }
+.vid-badge { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--dim); letter-spacing: 2px; display: flex; align-items: center; gap: 8px; }
+.vid-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--neon); animation: blink 1.2s infinite; }
+.vid-yt-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 20px; border: 1px solid #ff3333; color: #ff4444;
+  font-family: 'Orbitron', monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  text-decoration: none; cursor: none; transition: all 0.3s; background: transparent;
+}
+.vid-yt-btn:hover { background: rgba(255,60,60,0.12); box-shadow: 0 0 18px rgba(255,50,50,0.25); }
+
+/* ══════════════════════════════════════
+   VIDEO MODAL
+══════════════════════════════════════ */
+#vid-modal {
+  position: fixed; inset: 0; z-index: 9000; background: var(--modal-bg);
+  display: none; align-items: center; justify-content: center;
+  backdrop-filter: blur(8px);
+}
+#vid-modal.open { display: flex; }
+#vid-modal-inner {
+  position: relative; width: min(860px,94vw); background: #000;
+  border: 1px solid var(--border-h); box-shadow: 0 0 60px rgba(0,212,255,0.15);
+}
+#vid-modal-inner iframe { width: 100%; aspect-ratio: 16/9; display: block; border: none; }
+#vid-close {
+  position: absolute; top: -38px; right: 0;
+  font-family: 'Orbitron', monospace; font-size: 12px; color: var(--neon);
+  background: none; border: 1px solid var(--border-h); padding: 5px 14px; cursor: pointer; letter-spacing: 2px;
+}
+#vid-close:hover { background: var(--neon); color: #000; }
+
+/* ══════════════════════════════════════
+   PROJECTS
+══════════════════════════════════════ */
+.proj-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.proj-card { padding: 24px; display: flex; flex-direction: column; position: relative; overflow: hidden; }
+.proj-card::before { content:''; position: absolute; top: 0; left: -100%; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--neon), transparent); transition: left 0.55s; }
+.proj-card:hover::before { left: 100%; }
+.proj-card:hover { transform: translateY(-5px); }
+.proj-num { font-family: 'Orbitron', monospace; font-size: 10px; color: var(--dim); letter-spacing: 3px; margin-bottom: 11px; }
+.proj-icon { font-size: 26px; margin-bottom: 11px; }
+.proj-icon-wrap {
+  width: 58px; height: 58px; border-radius: 14px;
+  background: rgba(0,150,200,0.1); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px; color: var(--neon);
+  transition: all 0.3s; position: relative; overflow: hidden;
+}
+.proj-icon-wrap::before {
+  content: ''; position: absolute; inset: 0; border-radius: 14px;
+  background: linear-gradient(135deg, rgba(0,212,255,0.15), transparent);
+  opacity: 0; transition: opacity 0.3s;
+}
+.proj-card:hover .proj-icon-wrap {
+  background: rgba(0,150,200,0.18);
+  border-color: var(--border-h);
+  box-shadow: 0 0 20px rgba(0,212,255,0.15);
+  transform: scale(1.05);
+}
+.proj-card:hover .proj-icon-wrap::before { opacity: 1; }
+[data-theme="light"] .proj-icon-wrap { background: rgba(0,100,200,0.08); }
+.proj-title { font-family: 'Orbitron', monospace; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 9px; }
+.proj-desc { font-size: 13.5px; color: var(--text2); line-height: 1.7; flex: 1; margin-bottom: 16px; }
+.proj-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 16px; }
+.tag { font-family: 'Share Tech Mono', monospace; font-size: 10px; padding: 3px 9px; border: 1px solid var(--border); color: var(--dim); letter-spacing: 1px; }
+.proj-link { display: inline-flex; align-items: center; gap: 7px; font-family: 'Orbitron', monospace; font-size: 11px; color: var(--neon); text-decoration: none; letter-spacing: 1px; transition: all 0.3s; cursor: none; }
+.proj-link:hover { text-shadow: 0 0 10px rgba(0,212,255,0.6); }
+
+/* ══════════════════════════════════════
+   EXPERIENCE
+══════════════════════════════════════ */
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before { content:''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, var(--neon), transparent); }
+[data-lang="ar"] .timeline { padding-left: 0; padding-right: 32px; }
+[data-lang="ar"] .timeline::before { left: auto; right: 0; }
+.t-item { position: relative; margin-bottom: 32px; }
+.t-item::before { content:''; position: absolute; left: -37px; top: 8px; width: 10px; height: 10px; border: 1px solid var(--neon); background: var(--bg); transform: rotate(45deg); box-shadow: 0 0 8px rgba(0,212,255,0.3); }
+[data-lang="ar"] .t-item::before { left: auto; right: -37px; }
+.t-card { padding: 20px 24px; }
+.t-role { font-family: 'Orbitron', monospace; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+.t-meta { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--neon); letter-spacing: 2px; margin-bottom: 9px; }
+.t-desc { font-size: 14px; color: var(--text2); line-height: 1.7; }
+
+/* ══════════════════════════════════════
+   TESTIMONIALS
+══════════════════════════════════════ */
+.test-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.test-card { padding: 26px; position: relative; overflow: hidden; }
+.test-card::after { content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--neon), transparent); transform: scaleX(0); transform-origin: center; transition: transform 0.4s; }
+.test-card:hover::after { transform: scaleX(1); }
+.test-card:hover { transform: translateY(-4px); }
+.test-stars { color: var(--star); font-size: 14px; margin-bottom: 14px; letter-spacing: 2px; }
+.test-text { font-size: 14.5px; color: var(--text2); line-height: 1.8; margin-bottom: 18px; font-style: italic; position: relative; }
+.test-text::before { content: '"'; font-size: 48px; color: var(--neon); opacity: 0.18; position: absolute; top: -10px; left: -6px; font-family: Georgia, serif; line-height: 1; }
+[data-lang="ar"] .test-text { direction: rtl; text-align: right; }
+[data-lang="ar"] .test-text::before { left: auto; right: -6px; }
+.test-author { display: flex; align-items: center; gap: 12px; }
+.test-avatar { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--border-h); display: flex; align-items: center; justify-content: center; font-family: 'Orbitron', monospace; font-size: 13px; font-weight: 900; color: var(--neon); background: rgba(0,150,200,0.1); }
+.test-name { font-family: 'Share Tech Mono', monospace; font-size: 12px; color: var(--text); letter-spacing: 1px; }
+.test-role { font-size: 11px; color: var(--dim); font-family: 'Share Tech Mono', monospace; }
+
+/* ══════════════════════════════════════
+   CONTACT
+══════════════════════════════════════ */
+.contact-grid { display: grid; grid-template-columns: 1fr; gap: 32px; max-width: 600px; }
+.soc-link {
+  display: flex; align-items: center; gap: 14px; padding: 12px 17px;
+  text-decoration: none; transition: all 0.3s; color: var(--text);
+  cursor: none;
+}
+.soc-text { display: flex; flex-direction: column; gap: 2px; }
+.soc-name { font-family: 'Orbitron', monospace; font-size: 13px; font-weight: 700; color: var(--text); letter-spacing: 1px; }
+.soc-handle { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--dim); letter-spacing: 0.5px; }
+.soc-link:hover .soc-name { color: var(--text); }
+.soc-link:hover .soc-handle { color: var(--text2); }
+.soc-link:hover { border-color: var(--border-h) !important; color: var(--text); transform: translateX(6px); box-shadow: 0 0 18px var(--glow); }
+[data-lang="ar"] .soc-link:hover { transform: translateX(-6px); }
+.soc-icon { width: 44px; height: 44px; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.3s; border: 1.5px solid rgba(255,255,255,0.08); }
+.soc-link:hover .soc-icon { transform: scale(1.12); filter: brightness(1.2); border-color: rgba(255,255,255,0.25); }
+/* individual icon backgrounds */
+.soc-github  { background: #24292e; color: #fff; }
+.soc-youtube { background: #ff0000; color: #fff; }
+.soc-email   { background: #ea4335; color: #fff; }
+.soc-facebook{ background: #1877f2; color: #fff; }
+.soc-linkedin{ background: #0a66c2; color: #fff; }
+.soc-tiktok  { background: #010101; color: #fff; }
+.soc-instagram{ background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color: #fff; }
+.cf { display: flex; flex-direction: column; gap: 12px; }
+.cf label { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--dim); letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 5px; }
+.cf input, .cf textarea {
+  width: 100%; background: var(--card); border: 1px solid var(--border); color: var(--text);
+  font-family: 'Share Tech Mono', monospace; font-size: 13px; padding: 10px 14px; outline: none; resize: vertical; transition: border-color 0.3s;
+}
+.cf input:focus, .cf textarea:focus { border-color: var(--neon); box-shadow: 0 0 10px rgba(0,212,255,0.07); }
+.cf textarea { min-height: 96px; }
+
+/* ══════════════════════════════════════
+   FOOTER
+══════════════════════════════════════ */
+footer { padding: 24px 44px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 1; }
+.f-copy { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--dim); }
+.f-copy span { color: var(--neon); }
+
+/* ══════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════ */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.vis { opacity: 1; transform: translateY(0); }
+
+/* ══════════════════════════════════════
+   I18N HELPERS
+══════════════════════════════════════ */
+.en { display: block; }
+.ar { display: none; }
+[data-lang="ar"] .en { display: none; }
+[data-lang="ar"] .ar { display: block; }
+.ei { display: inline; }
+.ai { display: none; }
+[data-lang="ar"] .ei { display: none; }
+[data-lang="ar"] .ai { display: inline; }
+
+/* ══════════════════════════════════════
+   MOBILE
+══════════════════════════════════════ */
+@media (max-width: 920px) {
+  nav { padding: 10px 18px; }
+  .nav-links { gap: 14px; display: none; }
+  .sec { padding: 60px 20px; }
+  #hero { padding: 90px 20px 50px; }
+  .hero-inner { flex-direction: column; text-align: center; gap: 32px; }
+  [data-lang="ar"] .hero-text { text-align: center; }
+  .hero-btns, [data-lang="ar"] .hero-btns { justify-content: center; }
+  .hero-tag { justify-content: center; }
+  [data-lang="ar"] .hero-tag { justify-content: center; }
+  .about-grid { grid-template-columns: 1fr; }
+  .skills-grid, .proj-grid, .test-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 8px; text-align: center; }
+  .vid-info { flex-direction: column; align-items: flex-start; }
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() { emailjs.init({ publicKey: "Jmaeo2XGvucm0Expr" }); })();
+</script>
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cring"></div>
+
+<!-- Particles -->
+<canvas id="particles"></canvas>
+
+<!-- Video Modal -->
+<div id="vid-modal">
+  <div id="vid-modal-inner">
+    <button id="vid-close" onclick="closeModal()">✕ CLOSE</button>
+    <iframe id="vid-frame" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div id="loader-text"></div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav>
+  <a href="#" class="nav-logo">EL<span>GENERAL</span></a>
+  <ul class="nav-links">
+    <li><a href="#about"><span class="ei">About</span><span class="ai">عني</span></a></li>
+    <li><a href="#skills"><span class="ei">Skills</span><span class="ai">مهاراتي</span></a></li>
+    <li><a href="#projects"><span class="ei">Projects</span><span class="ai">مشاريع</span></a></li>
+    <li><a href="#experience"><span class="ei">Experience</span><span class="ai">خبرة</span></a></li>
+    <li><a href="#contact"><span class="ei">Contact</span><span class="ai">تواصل</span></a></li>
+  </ul>
+  <div class="nav-controls">
+    <button class="ctrl-btn" id="themeBtn" onclick="toggleTheme()">
+      <i class="fa-solid fa-moon" id="themeIco"></i>
+      <span id="themeTxt"><span class="ei">Light</span><span class="ai">فاتح</span></span>
+    </button>
+    <button class="ctrl-btn" id="langBtn" onclick="toggleLang()">
+      <i class="fa-solid fa-globe"></i>
+      <span id="langTxt">🇪🇬 عربي</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <!-- STATIC Profile Image -->
+    <div class="img-wrap">
+      <div class="ring"></div><div class="ring"></div><div class="ring"></div>
+      <div class="img-border"></div>
+      <div class="img-inner">
+        <img src="adam_profile.jpg" alt="Adam Elgeneral" draggable="false" style="object-fit: cover; object-position: center top;">
+      </div>
+      <div class="img-scan"></div>
+    </div>
+    <div class="hero-text">
+      <div class="hero-tag"><span class="ei">Ethical Hacker / Alexandria, Egypt</span><span class="ai">هاكر أخلاقي / الإسكندرية، مصر</span></div>
+      <div class="hero-name">
+        <div class="f">ADAM</div>
+        <div class="l">ELGENERAL <span class="verified-badge" title="Verified">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#1d9bf0"/>
+            <path d="M9.5 16.5L5.5 12.5L6.91 11.09L9.5 13.67L17.09 6.08L18.5 7.5L9.5 16.5Z" fill="white"/>
+          </svg>
+        </span></div>
+      </div>
+      <div class="hero-sub"><span class="ei">ETHICAL HACKER &nbsp;·&nbsp; WEB DEVELOPER &nbsp;·&nbsp; CYBER SECURITY</span><span class="ai">هاكر أخلاقي &nbsp;·&nbsp; مطور ويب &nbsp;·&nbsp; أمن سيبراني</span></div>
+      <div class="typing-box"><span id="typText"></span><span class="typing-cur">_</span></div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-p"><span><span class="ei">View Projects</span><span class="ai">المشاريع</span></span></a>
+        <a href="#contact" class="btn-g"><span class="ei">Contact Me</span><span class="ai">تواصل معي</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section id="about" class="sec reveal">
+  <div class="sec-head">
+    <div class="sec-label"><span class="ei">01 // About</span><span class="ai">01 // عني</span></div>
+    <h2 class="sec-title"><span class="ei">My <span>Story</span></span><span class="ai">قصتي <span>ورحلتي</span></span></h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="about-grid">
+    <div>
+      <div class="about-text en">
+        <p>My journey into the world of technology began in primary school, when I first developed an interest in programming, web development, and cybersecurity. What started as curiosity gradually grew into a passion for understanding how technology works, building digital experiences, and exploring the systems that power our modern world.</p>
+        <p>I'm <strong style="color:var(--neon)">Adam Elgeneral</strong>, an Ethical Hacker, Web Developer, and Cyber Security enthusiast. I create modern, responsive websites and explore how digital systems can be understood and protected.</p>
+        <p>My journey extends beyond web development. As an Ethical Hacker I study system vulnerabilities, practice responsible security research, and develop the attacker mindset needed to build stronger defenses.</p>
+        <p><strong>What I Do</strong></p>
+        <p><strong>Ethical Hacking:</strong> Identifying vulnerabilities, OSINT, web application security, and thinking like an attacker to protect systems.</p>
+        <p><strong>Web Development:</strong> Building modern, responsive websites using HTML, CSS, JavaScript, and React.</p>
+        <p><strong>Frontend Development:</strong> Creating interactive user interfaces with a focus on usability, performance, and visual consistency.</p>
+        <p><strong>Cybersecurity:</strong> Developing knowledge of digital security, system vulnerabilities, and security principles.</p>
+        <p><strong>Continuous Learning:</strong> Exploring new technologies, improving programming skills, and challenging myself through practical projects.</p>
+        <p><strong>My Philosophy</strong></p>
+        <p>I believe technology is more than just writing code — it's about solving problems, transforming ideas into reality, and creating experiences that make a difference.</p>
+        <p>I'm constantly pushing myself to learn, experiment, and improve. Every project is an opportunity to develop my skills, explore new possibilities, and get one step closer to mastering my craft.</p>
+        <p>I'm not just learning how technology works — I'm learning how to use it to build something meaningful.</p>
+      </div>
+      <div class="about-text ar">
+        <p>بدأت رحلتي في عالم التكنولوجيا من المرحلة الابتدائية، عندما طورت اهتمامًا لأول مرة بالبرمجة وتطوير الويب والأمن السيبراني. ما بدأ كفضول تحول تدريجيًا إلى شغف بفهم كيفية عمل التكنولوجيا، وبناء تجارب رقمية، واستكشاف الأنظمة التي تدير عالمنا الحديث.</p>
+        <p>أنا <strong style="color:var(--neon)">آدم الجنرال</strong>، هاكر أخلاقي ومطور ويب ومهتم بالأمن السيبراني. أبني مواقع حديثة ومتجاوبة وأستكشف كيف يمكن فهم الأنظمة الرقمية وحمايتها.</p>
+        <p>تمتد رحلتي إلى ما بعد تطوير الويب. كـ هاكر أخلاقي أدرس ثغرات الأنظمة وأمارس البحث الأمني المسؤول وأطور عقلية المهاجم اللازمة لبناء دفاعات أقوى.</p>
+        <p><strong>ماذا أفعل</strong></p>
+        <p><strong>الاختراق الأخلاقي:</strong> اكتشاف الثغرات، OSINT، أمان تطبيقات الويب، والتفكير كالمهاجم لحماية الأنظمة.</p>
+        <p><strong>تطوير الويب:</strong> بناء مواقع حديثة ومتجاوبة باستخدام HTML و CSS و JavaScript و React.</p>
+        <p><strong>تطوير الواجهات:</strong> إنشاء واجهات مستخدم تفاعلية مع التركيز على سهولة الاستخدام والأداء والاتساق البصري.</p>
+        <p><strong>الأمن السيبراني:</strong> تطوير معرفتي بالأمان الرقمي وثغرات الأنظمة ومبادئ الأمان.</p>
+        <p><strong>التعلم المستمر:</strong> استكشاف تقنيات جديدة وتحسين مهاراتي البرمجية وتحدي نفسي من خلال المشاريع العملية.</p>
+        <p><strong>فلسفتي</strong></p>
+        <p>أؤمن أن التكنولوجيا أكثر من مجرد كتابة كود — إنها عن حل المشكلات، وتحويل الأفكار إلى واقع، وخلق تجارب تحدث فرقًا.</p>
+        <p>أدفع نفسي باستمرار للتعلم والتجربة والتحسين. كل مشروع فرصة لتطوير مهاراتي واستكشاف إمكانيات جديدة والاقتراب خطوة من إتقان حرفي.</p>
+        <p>أنا لا أتعلم فقط كيف تعمل التكنولوجيا — أنا أتعلم كيف أستخدمها لبناء شيء ذي معنى.</p>
+      </div>
+      <div class="quote-box en">"Stay curious. Build with purpose. Use knowledge responsibly."</div>
+      <div class="quote-box ar">"ابقَ فضوليًا. ابنِ بهدف. استخدم المعرفة بمسؤولية."</div>
+    </div>
+    <div class="stats">
+      <div class="stat-card card" style="padding:0; overflow:hidden; border-radius:12px;">
+        <img src="adam_profile.jpg" alt="Adam Elgeneral" style="width:100%; display:block; border-radius:12px; filter:brightness(0.95) contrast(1.05);">
+      </div>
+      <div class="stat-card card">
+        <div class="stat-num" data-count="6" data-sfx="">0</div>
+        <div class="stat-lbl"><span class="ei">Languages Spoken</span><span class="ai">لغات متحدث بها</span></div>
+      </div>
+      <div class="stat-card card">
+        <div class="stat-num" data-count="11" data-sfx="+">0</div>
+        <div class="stat-lbl"><span class="ei">Projects Completed</span><span class="ai">مشاريع مكتملة</span></div>
+      </div>
+      <div class="stat-card card">
+        <div class="stat-num" style="font-size:24px;">EG</div>
+        <div class="stat-lbl"><span class="ei">Alexandria, Egypt</span><span class="ai">الإسكندرية، مصر</span></div>
+      </div>
+      <div class="stat-card card">
+        <div class="stat-num" style="font-size:24px;">Web + Sec</div>
+        <div class="stat-lbl"><span class="ei">Focus Areas</span><span class="ai">مجالات التركيز</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SKILLS ══════════════ -->
+<section id="skills" class="sec reveal">
+  <div class="sec-head">
+    <div class="sec-label"><span class="ei">02 // Skills</span><span class="ai">02 // مهاراتي</span></div>
+    <h2 class="sec-title"><span class="ei">Technical <span>Arsenal</span></span><span class="ai">ترسانة <span>المهارات</span></span></h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card card">
+      <div class="sk-title"><span class="ei">Web Development</span><span class="ai">تطوير الويب</span></div>
+      <div class="sk-item"><div class="sk-name">HTML / CSS <span>95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+      <div class="sk-item"><div class="sk-name">JavaScript <span>90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+      <div class="sk-item"><div class="sk-name">React <span>85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Responsive Design <span>92%</span></div><div class="sk-bar"><div class="sk-fill" data-w="92"></div></div></div>
+    </div>
+    <div class="skill-card card">
+      <div class="sk-title"><span class="ei">Programming</span><span class="ai">البرمجة</span></div>
+      <div class="sk-item"><div class="sk-name">Python <span>90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Bash <span>80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Java <span>70%</span></div><div class="sk-bar"><div class="sk-fill" data-w="70"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Git & GitHub <span>85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+    </div>
+    <div class="skill-card card">
+      <div class="sk-title"><span class="ei">Ethical Hacking & Cyber Sec</span><span class="ai">اختراق أخلاقي وأمن سيبراني</span></div>
+      <div class="sk-item"><div class="sk-name">Ethical Hacking <span>85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+      <div class="sk-item"><div class="sk-name">OSINT <span>88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Linux <span>85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Web Hacking <span>78%</span></div><div class="sk-bar"><div class="sk-fill" data-w="78"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Networking <span>75%</span></div><div class="sk-bar"><div class="sk-fill" data-w="75"></div></div></div>
+    </div>
+    <div class="skill-card card">
+      <div class="sk-title"><span class="ei">Tools & Other</span><span class="ai">الأدوات والأخرى</span></div>
+      <div class="sk-item"><div class="sk-name">AI / Automation <span>82%</span></div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Bootstrap / Tailwind <span>85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Burp Suite / Nmap <span>70%</span></div><div class="sk-bar"><div class="sk-fill" data-w="70"></div></div></div>
+      <div class="sk-item"><div class="sk-name">Vercel / Deployment <span>88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROJECTS ══════════════ -->
+<section id="projects" class="sec reveal">
+  <div class="sec-head">
+    <div class="sec-label"><span class="ei">04 // Projects</span><span class="ai">04 // المشاريع</span></div>
+    <h2 class="sec-title"><span class="ei">Featured <span>Work</span></span><span class="ai">أبرز <span>المشاريع</span></span></h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="proj-grid">
+    <!-- PROJECT 001 - StrideX -->
+    <div class="proj-card card">
+      <div class="proj-num">PROJECT // 001</div>
+      <div class="proj-icon-wrap">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+    <path d="M4 12h16M4 12l4-4M4 12l4 4M20 12l-4-4M20 12l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+</div>
+      <div class="proj-title">StrideX</div>
+      <div class="proj-desc en">A premium e-commerce website for luxury sports footwear. Features modern product showcases, Arabic language support, and a clean responsive design tailored for the Egyptian market — focused on performance, comfort, and style.</div>
+      <div class="proj-desc ar">موقع تجارة إلكترونية فاخر للأحذية الرياضية الفاخرة. يتميز بعروض منتجات حديثة، ودعم اللغة العربية، وتصميم متجاوب نظيف مصمم للسوق المصري — يركز على الأداء والراحة والأناقة.</div>
+      <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">E-commerce</span></div>
+      <a href="https://stridex.vercel.app/" target="_blank" class="proj-link">VIEW LIVE SITE ↗</a>
+    </div>
+    <!-- PROJECT 002 - AuraSmile -->
+    <div class="proj-card card">
+      <div class="proj-num">PROJECT // 002</div>
+      <div class="proj-icon-wrap">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+    <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="9" r="2.5" fill="currentColor"/>
+  </svg>
+</div>
+      <div class="proj-title">AuraSmile</div>
+      <div class="proj-desc en">A luxury dental clinic landing page with a premium dark UI. Includes service highlights, step-by-step treatment journey, testimonials, and a calm, high-converting design focused on aesthetic and patient experience.</div>
+      <div class="proj-desc ar">صفحة هبوط لعيادة أسنان فاخرة بواجهة داكنة مميزة. تتضمن أبرز الخدمات، ورحلة العلاج خطوة بخطوة، وآراء العملاء، وتصميم هادئ عالي التحويل يركز على الجمالية وتجربة المريض.</div>
+      <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Landing Page</span></div>
+      <a href="https://aurasmile.vercel.app/" target="_blank" class="proj-link">VIEW LIVE SITE ↗</a>
+    </div>
+    <!-- PROJECT 003 - PharmaCare -->
+    <div class="proj-card card">
+      <div class="proj-num">PROJECT // 003</div>
+      <div class="proj-icon-wrap">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</div>
+      <div class="proj-title">PharmaCare</div>
+      <div class="proj-desc en">An online pharmacy website offering quality medicines and healthcare services. Clean layout with featured products, fast delivery messaging, and customer support — built for trust and ease of use.</div>
+      <div class="proj-desc ar">موقع صيدلية إلكترونية يقدم أدوية عالية الجودة وخدمات رعاية صحية. تخطيط نظيف مع منتجات مميزة، ورسائل توصيل سريع، ودعم العملاء — مبني للثقة وسهولة الاستخدام.</div>
+      <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Web App</span></div>
+      <a href="https://pharmacy-test-elgeneral.vercel.app/" target="_blank" class="proj-link">VIEW LIVE SITE ↗</a>
+    </div>
+    <!-- PROJECT 004 - OSINT Tool -->
+    <div class="proj-card card">
+      <div class="proj-num">PROJECT // 004</div>
+      <div class="proj-icon-wrap">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+    <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+    <path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M8 11h6M11 8v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+</div>
+      <div class="proj-title">OSINT Tool</div>
+      <div class="proj-desc en">A professional open-source intelligence framework built in Python. Automates target reconnaissance by aggregating data from multiple public sources — enabling rapid digital footprint analysis and threat intelligence collection.</div>
+      <div class="proj-desc ar">أداة استخباراتية مفتوحة المصدر مبنية بـ Python. تقوم بأتمتة جمع المعلومات من مصادر متعددة لتحليل البصمة الرقمية وكشف التهديدات بسرعة وكفاءة.</div>
+      <div class="proj-tags"><span class="tag">Python</span><span class="tag">OSINT</span><span class="tag">Recon</span><span class="tag">CLI</span></div>
+      <a href="https://github.com/elgeneral18/Adam-elgeneral-osint.py" target="_blank" class="proj-link">VIEW ON GITHUB ↗</a>
+    </div>
+    <!-- PROJECT 005 - Code Generator Bot -->
+    <div class="proj-card card">
+      <div class="proj-num">PROJECT // 005</div>
+      <div class="proj-icon-wrap">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+    <rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+    <path d="M2 7h20" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M7 12l-2 2 2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17 12l2 2-2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M13 11l-2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+</div>
+      <div class="proj-title">Elgeneral Code Generator Bot</div>
+      <div class="proj-desc en">A Telegram bot that uses AI to generate complete websites and Telegram bots from simple user ideas — with project files, image support, and ZIP export. Built entirely in Python.</div>
+      <div class="proj-desc ar">بوت تيليجرام يستخدم الذكاء الاصطناعي لتوليد مواقع ويب كاملة وبوتات تيليجرام من أفكار بسيطة — مع ملفات المشروع ودعم الصور وتصدير ZIP. مبني بالكامل بـ Python.</div>
+      <div class="proj-tags"><span class="tag">Python</span><span class="tag">Telegram Bot</span><span class="tag">AI</span><span class="tag">Automation</span></div>
+      <a href="https://github.com/elgeneral18/Elgeneral-code-generator-bot" target="_blank" class="proj-link">VIEW ON GITHUB ↗</a>
+    </div>
+  </div></div>
+</section>
+
+<!-- ══════════════ EXPERIENCE ══════════════ -->
+<section id="experience" class="sec reveal">
+  <div class="sec-head">
+    <div class="sec-label"><span class="ei">05 // Experience</span><span class="ai">05 // الخبرة</span></div>
+    <h2 class="sec-title"><span class="ei">Professional <span>Journey</span></span><span class="ai">المسيرة <span>المهنية</span></span></h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="timeline">
+    <div class="t-item">
+      <div class="t-card card">
+        <div class="t-role"><span class="ei">Web Developer</span><span class="ai">مطور ويب</span></div>
+        <div class="t-meta"><span class="ei">Independent · Modern Websites</span><span class="ai">مستقل · مواقع حديثة</span></div>
+        <div class="t-desc en">Building modern, responsive websites using HTML, CSS, JavaScript, and React. Focused on clean code, thoughtful design, and intuitive user interfaces for e-commerce, landing pages, and web apps.</div>
+        <div class="t-desc ar">بناء مواقع حديثة ومتجاوبة باستخدام HTML و CSS و JavaScript و React. التركيز على الكود النظيف والتصميم المدروس وواجهات المستخدم البديهية لمواقع التجارة الإلكترونية وصفحات الهبوط وتطبيقات الويب.</div>
+      </div>
+    </div>
+    <div class="t-item">
+      <div class="t-card card">
+        <div class="t-role"><span class="ei">Ethical Hacker</span><span class="ai">هاكر أخلاقي</span></div>
+        <div class="t-meta"><span class="ei">Independent Security Research</span><span class="ai">بحث أمني مستقل</span></div>
+        <div class="t-desc en">Practicing ethical hacking and security research. Building OSINT tools, studying web application security, and developing the attacker mindset needed to identify vulnerabilities and strengthen defenses.</div>
+        <div class="t-desc ar">ممارسة الاختراق الأخلاقي والبحث الأمني. بناء أدوات OSINT، ودراسة أمان تطبيقات الويب، وتطوير عقلية المهاجم اللازمة لتحديد الثغرات وتقوية الدفاعات.</div>
+      </div>
+    </div>
+    <div class="t-item">
+      <div class="t-card card">
+        <div class="t-role"><span class="ei">AI & Automation Developer</span><span class="ai">مطور ذكاء اصطناعي وأتمتة</span></div>
+        <div class="t-meta"><span class="ei">Python · Telegram Bots</span><span class="ai">بايثون · بوتات تيليجرام</span></div>
+        <div class="t-desc en">Building intelligent automation tools and AI-powered bots that generate websites and solutions from simple ideas. Combining Python, APIs, and modern AI capabilities.</div>
+        <div class="t-desc ar">بناء أدوات أتمتة ذكية وروبوتات مدعومة بالذكاء الاصطناعي تولد مواقع وحلول من أفكار بسيطة. الجمع بين Python والـ APIs وقدرات الذكاء الاصطناعي الحديثة.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section id="contact" class="sec reveal">
+  <div class="sec-head">
+    <div class="sec-label"><span class="ei">07 // Contact</span><span class="ai">07 // تواصل</span></div>
+    <h2 class="sec-title"><span class="ei">Get In <span>Touch</span></span><span class="ai">تواصل <span>معي</span></span></h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <p style="font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:22px;" class="en">Have a project idea, want to talk tech, or just want to connect? Reach out through any of the links. I'm always glad to hear from people who love building and learning.</p>
+      <p style="font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:22px;direction:rtl;text-align:right;" class="ar">عندك فكرة مشروع، عايز تتكلم عن التقنية، أو بس تتعرف؟ تواصل من خلال أي لينك. دايمًا سعيد أسمع من ناس بتحب تبني وتتعلم.</p>
+      <div style="display:flex;flex-direction:column;gap:9px;">
+        <!-- Social links -->
+        <a href="mailto:adamelgeneral1@gmail.com" class="soc-link card" style="border:1px solid var(--border);">
+          <div class="soc-icon soc-email"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></div>
+          <div class="soc-text"><span class="soc-name">Email</span><span class="soc-handle">adamelgeneral1@gmail.com</span></div>
+        </a>
+        <a href="https://wa.me/201507119434" target="_blank" class="soc-link card" style="border:1px solid var(--border);">
+          <div class="soc-icon soc-email" style="background:#25D366;"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+          <div class="soc-text"><span class="soc-name">WhatsApp</span><span class="soc-handle">+20 150 711 9434</span></div>
+        </a>
+        <a href="https://github.com/elgeneral18" target="_blank" class="soc-link card" style="border:1px solid var(--border);">
+          <div class="soc-icon soc-github"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></div>
+          <div class="soc-text"><span class="soc-name">GitHub</span><span class="soc-handle">@elgeneral18</span></div>
+        </a>
+        <a href="https://www.tiktok.com/@dxm_e3" target="_blank" class="soc-link card" style="border:1px solid var(--border);">
+          <div class="soc-icon soc-tiktok"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></div>
+          <div class="soc-text"><span class="soc-name">TikTok</span><span class="soc-handle">@dxm_e3</span></div>
+        </a>
+      </div>      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-copy">© 2025 <span>Adam Elgeneral</span> // All Rights Reserved</div>
+  <div class="f-copy"><span class="ei">ETHICAL HACKER · WEB DEVELOPER · ALEXANDRIA, EGYPT</span><span class="ai">هاكر أخلاقي · مطور ويب · الإسكندرية، مصر</span></div>
+</footer>
+
+<script>
+/* ══════════════════════════════════════
+   THEME — Dark / Light with localStorage
+══════════════════════════════════════ */
+function applyTheme(t) {
+  document.documentElement.dataset.theme = t;
+  localStorage.setItem('yg-theme', t);
+  const ico = document.getElementById('themeIco');
+  if (t === 'dark') {
+    ico.className = 'fa-solid fa-moon';
+    document.getElementById('themeTxt').innerHTML = '<span class="ei">Light</span><span class="ai">فاتح</span>';
+  } else {
+    ico.className = 'fa-solid fa-sun';
+    document.getElementById('themeTxt').innerHTML = '<span class="ei">Dark</span><span class="ai">داكن</span>';
+  }
+  // i18n spans visibility
+  syncI18n();
+}
+function toggleTheme() { applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'); }
+
+/* ══════════════════════════════════════
+   LANGUAGE — EN / AR with localStorage
+══════════════════════════════════════ */
+function applyLang(l) {
+  document.documentElement.dataset.lang = l;
+  document.documentElement.lang = l;
+  localStorage.setItem('yg-lang', l);
+  document.getElementById('langTxt').textContent = l === 'en' ? '🇪🇬 عربي' : '🇺🇸 English';
+  syncI18n();
+  if (tyEl) restartTyping();
+}
+function toggleLang() { applyLang(document.documentElement.dataset.lang === 'en' ? 'ar' : 'en'); }
+
+function syncI18n() {
+  // handled via CSS data-lang attribute — no JS needed
+}
+
+/* ══════════════════════════════════════
+   INIT — restore saved preferences
+══════════════════════════════════════ */
+var tpi=0, tci=0, tdel=false, ttm=null;
+var tyEl = null;
+
+(function init() {
+  const savedTheme = localStorage.getItem('yg-theme') || 'dark';
+  const savedLang  = localStorage.getItem('yg-lang')  || 'en';
+  applyTheme(savedTheme);
+  applyLang(savedLang);
+})();
+
+/* ══════════════════════════════════════
+   LOADER
+══════════════════════════════════════ */
+const loaderLines = [
+  '> Initializing secure connection...',
+  '> Loading security modules...',
+  '> Decrypting portfolio data...',
+  '> ACCESS GRANTED ██████████ 100%'
+];
+let li = 0, lc = 0;
+const lEl = document.getElementById('loader-text');
+function typeLoader() {
+  if (li >= loaderLines.length) {
+    setTimeout(() => {
+      const ld = document.getElementById('loader');
+      ld.style.opacity = '0';
+      setTimeout(() => ld.style.display = 'none', 700);
+    }, 280);
+    return;
+  }
+  if (lc < loaderLines[li].length) {
+    lEl.textContent += loaderLines[li][lc++];
+    setTimeout(typeLoader, 22);
+  } else {
+    lEl.textContent += '\n';
+    li++; lc = 0;
+    setTimeout(typeLoader, 90);
+  }
+}
+typeLoader();
+
+/* ══════════════════════════════════════
+   CUSTOM CURSOR
+══════════════════════════════════════ */
+const cur = document.getElementById('cursor');
+const cring = document.getElementById('cring');
+let mx = 0, my = 0;
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cur.style.left = mx + 'px'; cur.style.top = my + 'px';
+  cring.style.left = mx + 'px'; cring.style.top = my + 'px';
+});
+document.addEventListener('mousedown', () => cur.classList.add('click'));
+document.addEventListener('mouseup', () => cur.classList.remove('click'));
+document.querySelectorAll('a,button,.vid-thumb,.proj-card').forEach(el => {
+  el.addEventListener('mouseenter', () => cring.classList.add('hov'));
+  el.addEventListener('mouseleave', () => cring.classList.remove('hov'));
+});
+
+/* ══════════════════════════════════════
+   PARTICLES
+══════════════════════════════════════ */
+const cv = document.getElementById('particles');
+const cx = cv.getContext('2d');
+function rsz() { cv.width = innerWidth; cv.height = innerHeight; }
+rsz(); window.addEventListener('resize', rsz);
+const PTS = Array.from({length:65}, () => ({
+  x: Math.random()*innerWidth, y: Math.random()*innerHeight,
+  vx: (Math.random()-.5)*.32, vy: (Math.random()-.5)*.32,
+  r: Math.random()*1.3+.3, a: Math.random()*.45+.08
+}));
+function ptColor() { return document.documentElement.dataset.theme === 'light' ? '0,90,180' : '0,200,255'; }
+function drawPts() {
+  cx.clearRect(0,0,cv.width,cv.height);
+  const c = ptColor();
+  PTS.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x<0) p.x=cv.width; if (p.x>cv.width) p.x=0;
+    if (p.y<0) p.y=cv.height; if (p.y>cv.height) p.y=0;
+    cx.beginPath(); cx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    cx.fillStyle=`rgba(${c},${p.a})`; cx.fill();
+  });
+  for(let i=0;i<PTS.length;i++) for(let j=i+1;j<PTS.length;j++) {
+    const dx=PTS[i].x-PTS[j].x, dy=PTS[i].y-PTS[j].y, d=Math.sqrt(dx*dx+dy*dy);
+    if(d<110){ cx.beginPath(); cx.strokeStyle=`rgba(${c},${.07*(1-d/110)})`; cx.lineWidth=.5; cx.moveTo(PTS[i].x,PTS[i].y); cx.lineTo(PTS[j].x,PTS[j].y); cx.stroke(); }
+  }
+  requestAnimationFrame(drawPts);
+}
+drawPts();
+
+/* ══════════════════════════════════════
+   TYPING ANIMATION
+══════════════════════════════════════ */
+const phEn = ['Securing systems...','Breaking to protect...','Learning. Building. Protecting.','Think like an attacker.','Defense through offense.'];
+const phAr = ['حماية الأنظمة...','نخترق لنحمي...','أتعلم. أبني. أحمي.','فكر مثل المهاجم.','الدفاع يبدأ بالهجوم.'];
+
+function getPh() { return document.documentElement.dataset.lang==='ar' ? phAr : phEn; }
+function typeHero() {
+  if (!tyEl) tyEl = document.getElementById('typText');
+  const ph = getPh()[tpi % getPh().length];
+  if (!tdel) {
+    tyEl.textContent = ph.slice(0,++tci);
+    if (tci===ph.length) { tdel=true; ttm=setTimeout(typeHero,2200); return; }
+    ttm=setTimeout(typeHero,65);
+  } else {
+    tyEl.textContent = ph.slice(0,--tci);
+    if (tci===0) { tdel=false; tpi++; ttm=setTimeout(typeHero,380); return; }
+    ttm=setTimeout(typeHero,30);
+  }
+}
+function restartTyping() { tyEl = tyEl || document.getElementById('typText'); clearTimeout(ttm); tpi=0; tci=0; tdel=false; if(tyEl) tyEl.textContent=''; ttm=setTimeout(typeHero,200); }
+setTimeout(typeHero, 3400);
+
+/* ══════════════════════════════════════
+   VIDEO MODAL
+══════════════════════════════════════ */
+const YT_ID = 'Pdblds-ndAE';
+function openModal() {
+  document.getElementById('vid-frame').src = `https://www.youtube.com/embed/${YT_ID}?autoplay=1&rel=0`;
+  document.getElementById('vid-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('vid-frame').src = '';
+  document.getElementById('vid-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('vid-modal').addEventListener('click', e => { if(e.target===e.currentTarget) closeModal(); });
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+
+/* ══════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════ */
+const revEls = document.querySelectorAll('.reveal');
+new IntersectionObserver(ents => ents.forEach(e => { if(e.isIntersecting) e.target.classList.add('vis'); }), {threshold:0.08})
+  .observe ? revEls.forEach(el => new IntersectionObserver(ents => ents.forEach(e => { if(e.isIntersecting) e.target.classList.add('vis'); }), {threshold:0.08}).observe(el)) : revEls.forEach(el=>el.classList.add('vis'));
+
+/* ══════════════════════════════════════
+   SKILL BARS
+══════════════════════════════════════ */
+const skObs = new IntersectionObserver(ents => {
+  ents.forEach(e => { if(e.isIntersecting){ e.target.querySelectorAll('.sk-fill').forEach(b=>b.style.width=b.dataset.w+'%'); skObs.unobserve(e.target); } });
+}, {threshold:0.25});
+document.querySelectorAll('.skill-card').forEach(g => skObs.observe(g));
+
+/* ══════════════════════════════════════
+   COUNT UP
+══════════════════════════════════════ */
+const cntObs = new IntersectionObserver(ents => {
+  ents.forEach(e => {
+    if(e.isIntersecting){
+      e.target.querySelectorAll('[data-count]').forEach(el => {
+        const tgt = +el.dataset.count, sfx = el.dataset.sfx||'+';
+        let cur=0; const step=Math.max(1,Math.ceil(tgt/55));
+        const t=setInterval(()=>{ cur=Math.min(cur+step,tgt); el.textContent=cur+sfx; if(cur>=tgt)clearInterval(t); },28);
+      });
+      cntObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.25});
+
+
+document.querySelectorAll('.stats').forEach(s=>cntObs.observe(s));
+</script>
+</body>
+</html>
